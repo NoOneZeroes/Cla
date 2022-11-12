@@ -30,7 +30,50 @@
   --section-padding: 60px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
+.flex {
+  display: flex !important;
+}
+
+.none {
+  display: none;
+}
+
+.top {
+  cursor: pointer;
+  background-color: #6610f2;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  display: none;
+}
+
+.top i {
+  font-size: 35px;
+  color: #20c997;
+}
+
+@media (max-width:768px) {
+  .top {
+    width: 30px;
+    height: 30px;
+    bottom: 30px;
+    right: 30px;
+  }
+
+  .top i {
+    font-size: 22px;
+  }
+}
 
 .loader {
   position: fixed;

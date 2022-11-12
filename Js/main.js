@@ -99,3 +99,16 @@ window.addEventListener("load", () => {
   const loader = document.querySelector(".loader");
   loader.classList.add("loader--hidden");
 });
+
+// arrow top
+
+let toop = document.querySelector(".top")
+window.onscroll = function () {
+  (window.scrollY >= 600) ? toop.classList.add("flex") : toop.classList.remove("flex")
+}
+toop.addEventListener("click", function top() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+})
